@@ -9,7 +9,9 @@
       </div>
       <div *ngIf="newEmployeeClicked">
         <div class="formWrapper">
-          <form action="">
+
+        <!-- Add Employee-->
+          <form>
               <div class="form-group name">
                 <input type="text" class="form-control input" id="name" name="name" [(ngModel)]="model.name" placeholder="Enter Your Name">
               </div>
@@ -41,6 +43,7 @@
       <div class="editEmployeeTitleContainer">
           <div class="">Edit Employee</div>
       </div>
+      <!--Edit Employee Form -->
       <form>
         <div class="form-group name">
             <input type="text" class="form-control" id="name" name="name" [(ngModel)]="model2.name" placeholder="Name Here ">
@@ -50,6 +53,7 @@
       </div>
       <div class="btn btn-dark" type="submit" (click)="updateEmployee()">Update</div>
       </form>
+
     </div>
   </div>
 </div>

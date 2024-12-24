@@ -47,7 +47,6 @@ export class CrudComponent implements OnInit {
       console.error('Invalid index for editing');
     }
   }
-
   updateEmployee() {
     const index = this.myValue;
     if (index > -1 && index < this.employees.length) {
